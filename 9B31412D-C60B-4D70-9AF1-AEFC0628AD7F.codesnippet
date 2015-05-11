@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var &lt;#view#&gt;: UIView? = view!.contentView.viewWithTag(&lt;#tag#&gt;)
+        if &lt;#view#&gt; == nil {
+            line = UIView()
+            line!.tag = &lt;#tag#&gt;
+            &lt;#setup view#&gt;
+            view!.contentView.addSubview(line!)
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9B31412D-C60B-4D70-9AF1-AEFC0628AD7F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

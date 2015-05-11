@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>vctemplate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - view life cycle
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITableViewDataSource
+
+#pragma mark - UITableViewDelegate
+
+#pragma mark - Custom Delegate
+
+#pragma mark - Event Response
+
+#pragma mark - Private Methods
+
+#pragma mark - Setters &amp; Getters</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DDAE8C9D-30BD-408B-9C05-C0178B45E0C0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Standard View Controller Template</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>View Controller Template - OC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
