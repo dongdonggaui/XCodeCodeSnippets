@@ -3,28 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>viewwithtag</string>
+	<string>barbi</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>var &lt;#view#&gt;: UIView? = view!.contentView.viewWithTag(&lt;#tag#&gt;)
-        if &lt;#view#&gt; == nil {
-            line = UIView()
-            line!.tag = &lt;#tag#&gt;
-            &lt;#setup view#&gt;
-            view!.contentView.addSubview(line!)
-        }</string>
+	<string>UIBarButtonItem *&lt;#name#&gt;Item = [[UIBarButtonItem alloc] initWithTitle:@"&lt;#title#&gt;" style:UIBarButtonItemStylePlain target:self action:@selector(&lt;#SEL#&gt;)];
+self.navigationItem.&lt;#left#&gt;BarButtonItem = &lt;#item#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9B31412D-C60B-4D70-9AF1-AEFC0628AD7F</string>
+	<string>D68735B4-47F1-446D-8664-19817D144C70</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ViewWithTagForSwift</string>
+	<string>UIBarButtonItem</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
