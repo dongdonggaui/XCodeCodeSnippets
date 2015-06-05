@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>itempresented</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func cancel() {
+        &lt;#cancel callback#&gt;
+        self.dismissSelf()
+        
+        var cancelItem = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: "cancel")
+        self.navigationItem.leftBarButtonItem = cancelItem
+        var doneItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "done")
+        self.navigationItem.rightBarButtonItem = doneItem
+    }
+    
+    func done() {
+        &lt;#done callback#&gt;
+    }
+    
+    func dismissSelf() {
+        &lt;#operatioin#&gt;
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E5DE4C36-1A34-40DE-8F53-122D3810EEE3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Presented ViewController Item - Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -3,23 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>barbi</string>
+	<string>constraintssetup</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIBarButtonItem *&lt;#name#&gt;Item = [[UIBarButtonItem alloc] initWithTitle:@"&lt;#title#&gt;" style:UIBarButtonItemStylePlain target:self action:@selector(&lt;#SEL#&gt;)];
-self.navigationItem.&lt;#left#&gt;BarButtonItem = &lt;#item#&gt;;</string>
+	<string>override func updateViewConstraints() {
+        if !self.hasSetupConstraints {
+            &lt;#setup constraints#&gt;
+            self.hasSetupConstraints = true
+        }
+        super.updateViewConstraints()
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D68735B4-47F1-446D-8664-19817D144C70</string>
+	<string>A00D847D-A3D9-4A88-B3B9-74E2A38D9702</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIBarButtonItem</string>
+	<string>Setup Constraints - Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
