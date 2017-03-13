@@ -3,25 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>constraintssetup</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>override func updateViewConstraints() {
-        if !self.hasSetupConstraints {
-            &lt;#setup constraints#&gt;
-            self.hasSetupConstraints = true
-        }
-        super.updateViewConstraints()
-    }</string>
+	<string>+ (instancetype)sharedInstance
+{
+    static id shared_ = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        shared_ = [[self alloc] init];
+    });
+    
+    return shared_;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A00D847D-A3D9-4A88-B3B9-74E2A38D9702</string>
+	<string>FE6915B3-56E3-42C0-A7AE-346800B6B6E2</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>singleto patten</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Setup Constraints - Swift</string>
+	<string>Singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
